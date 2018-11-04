@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CursoRedsocial</title>
+    <%= csrf_meta_tags %>
+    <!-- Agregados manualmente -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" />
+    <!-- *********** -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+
+  <body>
+    <div id="global-snackbar" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div> 
+    <p style="<%= 'display: none;' if notice.nil? || alert.nil? %>"><%= notice %><%= alert %></p>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <%= render 'partials/nav' %>
+      <main class="mdl-layout__content main-background">
+        <div class="page-content"><%= yield %></div>
+      </main>
+    </div>
+  </body>
+</html>

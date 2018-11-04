@@ -1,0 +1,9 @@
+.full-height.row.middle-xs.white-text.center-xs.main-background.no-margin
+	=grid xs:10,sm:8,md:6,lg:4 do
+		.big-padding.blue.text-left.white-text
+			%h1.no-margin.bold.light-blue-text.no-margin Red Social
+			%p.no-margin Conecta y conoce a la comunidad Rails
+			.top-space
+				=render "devise/registrations/new"
+			= #.large-padding.text-center aqui iba el link de crear cuenta
+			= #link_to "Crear cuenta", new_user_registration_path

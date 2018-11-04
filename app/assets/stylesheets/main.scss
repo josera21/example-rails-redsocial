@@ -1,0 +1,39 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #eee;
+}
+
+.remotipart {
+	display: none;
+}
+
+.main-background {
+	background-image: url(#{asset_path('background.jpg')});
+	background-size: cover;
+	background-repeat: none;
+}
+
+.cover {
+	background-size: cover;
+	background-position: center;
+}
+
+.background-content {
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	border-shadow: 2px 2px 2px 2px;
+}
+
+.content-space {
+	margin: 2em 0em 2em 0em;
+	padding: 1em 2em 1em 2em;
+}
+
+#notification {
+	width: 1.5em;
+	height: 1.6em;
+	text-align: center;
+}

@@ -1,0 +1,73 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.right-space {
+	margin-right: 1.5em;
+}
+
+.medium {
+	font-size: 1.2em;
+}
+
+.padding-bottom {
+	padding-bottom: 1em;
+}
+
+.large-padding {
+	padding: 10px 15px;
+}
+
+.big-padding {
+	padding: 2em 1.5em;
+}
+
+.border-bottom {
+	border-bottom: 1px solid currentcolor;
+}
+
+.top-space {
+	margin-top: 1em;
+}
+
+.remove-bullet-points {
+	list-style-type: none;
+	margin: 0;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.circle {
+	border-radius: 50%;
+}

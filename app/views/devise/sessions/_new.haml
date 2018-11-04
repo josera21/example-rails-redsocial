@@ -1,0 +1,20 @@
+=form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+	.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+		= f.email_field :email, autofocus: true, class:"mdl-textfield__input"
+		= f.label :email, class:"mdl-textfield__label white-text"
+
+	.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+		= f.password_field :password, autofocus: true, class:"mdl-textfield__input"
+		= f.label :password, class:"mdl-textfield__label white-text"
+
+	-if devise_mapping.rememberable?
+		%label.mdl-checkbox.mdl-js-checkbox.mdl-js-ripple-effect
+			= f.check_box :remember_me, class:"mdl-checkbox__input"
+			%span.mdl-checkbox__label.grey-text Recordar
+	
+	.top-space
+		.row.text-left.middle-xs
+			=grid xs:12, md:6 do
+				=f.submit "Iniciar sesion", class:"mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+			=grid xs:12, md:6 do
+				=link_to "No tengo cuenta", new_user_registration_path, class:"white-text underline"
